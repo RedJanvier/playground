@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PayPay.</title>
+  <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="navbar-logo">
+      <h1>Paypay.</h1>
+    </div>
+    <ul class="navbar-links">
+      <li class="navbar-links__item"><a href="#"><i class="fa fa-th-large"></i><span>Dashboard</span></a></li>
+      <li class="navbar-links__item active"><a href="#"><i class="fa fa-file-text"></i><span>Invoices</span></a></li>
+      <li class="navbar-links__item"><a href="#"><i class="fa fa-money"></i><span>Wallet</span></a></li>
+      <li class="navbar-links__item"><a href="#"><i class="fa fa-pie-chart"></i><span>Activity</span></a></li>
+      <li class="navbar-links__item"><a href="#"><i class="fa fa-phone"></i><span>Help</span></a></li>
+    </ul>
+
+    <ul class="navbar-actions">
+      <li class="navbar-actions__item"><a href="#"><i class="fa fa-bell"></i></a></li>
+      <li class="navbar-actions__item"><a href="#"><i class="fa fa-cog"></i></a></li>
+      <li class="navbar-actions__item separator"></li>
+      <li class="navbar-actions__item"><a href="#"><img src="https://randomuser.me/api/portraits/men/93.jpg" alt="user photo"></a></li>
+    </ul>
+  </nav>
+  <div class="container">
+    <header>
+      <ul class="breadcrumb">
+        <li class="breadcrumb__item">Invoices</li>
+        <li class="breadcrumb__item">edit invoice (INV-2022-010)</li>
+      </ul>
+  
+      <select name="inv-actions" id="inv-actions" class="inv-actions">
+        <option value="" class="inv-actions__item">Manage Invoice</option>
+      </select>
+    </header>
+    <div class="flex gap-1">
+      <main class="card flex-1 main-card">
+        <div class="flex align-center justify-between">
+          <div class="user-profile gap--5 flex align-center">
+            <div class="user-image">
+              <img src="https://randomuser.me/api/portraits/men/93.jpg" alt="user1-image">
+            </div>
+            <div class="user-details">
+              <h3 class="user-details__name">Dipa Inhouse</h3>
+              <p class="user-details__email">hello@dipainhouse.com</p>
+            </div>
+          </div>
+          <ul class="user-address">
+            <li class="user-address__item">Ijen Boulevard Street 101</li>
+            <li class="user-address__item">Malang City, 65115</li>
+            <li class="user-address__item">East Java, Indonesia</li>
+          </ul>
+        </div>
+        <div class="card card-primary my-2 flex align-center justify-between">
+          <ul class="text-left">
+            <li><b>Invoice Number</b></li>
+            <li><b>INV-2022-010</b></li>
+            <li>Issued Date: <b>11 Jan 2022</b></li>
+            <li>Due Date: <b>19 Jan 2022</b></li>
+          </ul>
+          <ul class="text-right">
+            <li><b>Billed to</b></li>
+            <li>Zaky Grizzly</li>
+            <li>Monlight Agency LTD</li>
+            <li>New York, USA</li>
+          </ul>
+        </div>
+        <div class="table-head flex justify-between align-center my-1">
+          <div>
+            <h3 class="table-head__title">Item Detail</h3>
+            <p class="table-head__subtitle">Type Item for <b>Hours</b> item.</p>
+          </div>
+          <button class="btn text-primary bg-light-gray"><i class="fa fa-cog"></i> <span>Customize</span></button>
+        </div>
+        <ul class="table-title border-y py-1 text-gray">
+          <li>Item Name</li>
+          <li>Hours</li>
+          <li>Rate/hr</li>
+          <li>Tax</li>
+          <li>Line Total</li>
+          <li></li>
+        </ul>
+        <ul class="table-row">
+          <li><input type="text" placeholder="Description" class="input"></li>
+          <li><input type="text" class="input"></li>
+          <li class="input-money"><input type="text" placeholder="0.00" class="input"></li>
+          <li class="input-money"><input type="text" placeholder="0.00" class="input"></li>
+          <li class="input-money"><input type="text" placeholder="0.00" class="input"></li>
+          <li><button class="btn bg-primary text-light"><i class="fa fa-plus"></i></button></li>
+        </ul>
+        <ul class="table-row__last">
+          <li><input type="text" placeholder="Description" class="input"></li>
+        </ul>
+      </main>
+      <aside class="flex-col gap-1">
+        <div class="card">
+          <div class="card-header flex">
+            <p class="card-header__title">Client Details</p>
+            <i class="card-header__action fa fa-bars"></i>
+          </div>
+          <div class="user-profile py-1 gap--5 flex align-center border-bottom">
+            <div class="user-image">
+              <img src="https://randomuser.me/api/portraits/men/93.jpg" alt="user1-image">
+            </div>
+            <div class="user-details">
+              <h3 class="user-details__name">Dipa Inhouse</h3>
+              <p class="user-details__email">hello@dipainhouse.com</p>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header flex">
+            <p class="card-header__title">Amount Due <span>(USD)</span></p>
+            <i class="card-header__action fa fa-bars"></i>
+          </div>
+        </div>
+      </aside>
+    </div>
+  </div>
+</body>
+</html>
