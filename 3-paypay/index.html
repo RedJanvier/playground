@@ -40,7 +40,7 @@
       </select>
     </header>
     <div class="flex gap-1">
-      <main class="card flex-1 main-card">
+      <main class="card flex-1 main-card mb-1">
         <div class="flex align-center justify-between">
           <div class="user-profile gap--5 flex align-center">
             <div class="user-image">
@@ -97,6 +97,33 @@
         <ul class="table-row__last">
           <li><input type="text" placeholder="Description" class="input"></li>
         </ul>
+        <footer class="border-top mt-1 py-1 flex justify-between">
+          <section class="payment">
+            <div class="payment-title flex justify-between align-center">
+              <h3>Payment method</h3>
+              <button class="btn text-primary">Select payment</button>
+            </div>
+            <div class="card bg-light-gray">
+              <div class="payment-method flex justify-between align-center">
+                <p>Wire transfer</p>
+                <img src="./img/wise-logo.png" alt="wise-transfer-logo">
+              </div>
+              <ul class="text-gray pt-1">
+                <li>Account Name: <span class="text-dark">Barly Vallendito</span></li>
+                <li>Account Number: <span class="text-dark">9700 0023 4200 2900</span></li>
+                <li>Routing Number: <span class="text-dark">084009519</span></li>
+              </ul>
+            </div>
+          </section>
+          <section class="summary">
+            <ul class="text-gray">
+              <li class="text-dark flex justify-between py--5"><span>Sub Total</span><span>$4,800.00</span></li>
+              <li class="flex justify-between py--5"><span>Discount</span><span class="text-dark">$4,800.00</span></li>
+              <li class="flex justify-between py--5"><span>Tax Total</span><span class="text-dark">$4,800.00</span></li>
+              <li class="flex justify-between border-top py-1 mt-2"><span>Total Amount</span><span class="text-dark">$4,800.00</span></li>
+            </ul>
+          </section>
+        </footer>
       </main>
       <aside class="flex-col gap-1">
         <div class="card">
@@ -113,13 +140,31 @@
               <p class="user-details__email">hello@dipainhouse.com</p>
             </div>
           </div>
+          <div class="user-address py-1 text-left flex flex-col">
+            <h4>Monlight Agency LTD <i class="fa fa-check-circle color-skyblue"></i></h4>
+            <p class="my-1">9 Acacia Drive Rome, NY 13440, USA</p>
+            <button class="btn bg-light-gray text-primary">Add Customer</button>
+          </div>
         </div>
         <div class="card">
           <div class="card-header flex">
             <p class="card-header__title">Amount Due <span>(USD)</span></p>
             <i class="card-header__action fa fa-bars"></i>
           </div>
+          <div class="card-body py-1 border-bottom">
+            <h3 class="bold">$4,800.00 <span class="text-gray">(Tax Incl.)</span></h3>
+            <button class="text-red bg-light-red btn mt-1" disabled>Due on Jan 20, 2022</button>
+          </div>
+          <div class="card-footer flex mt-1 justify-between">
+            <p>Also attach pdf in mail</p>
+            <span class="text-gray">SWITCH</span>
+          </div>
         </div>
+        <div class="flex gap-1 align-center">
+          <button class="btn text-primary bg-light bold w-100"><i class="fa fa-eye"></i> Previews</button>
+          <button class="btn text-primary bg-light bold w-100"><i class="fa fa-download"></i> Download</button>
+        </div>
+        <button class="btn bg-primary text-light bold">Send Invoice</button>
       </aside>
     </div>
   </div>
